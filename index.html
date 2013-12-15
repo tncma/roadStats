@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>road status</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/road.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div data-bind="template: {name: 'road-template', foreach: filteredRoads}" id="container"></div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/knockout-3.0.0.js"></script>
+<script src="js/knockout.mapping.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/data.js"></script>
+<script type="text/html" id="feedback-template"> 
+	<span data-bind="text: type"></span>
+</script>
+<script type="text/html" id="road-template">
+<div class="row road">
+	<div class="span12">
+		<div class="row">
+			<div class="span3 name" data-bind="text: name"></div>
+			<div class="span2 type" data-bind="text: type"></div>
+			<div class="span2 type" data-bind="text: contractor"></div>
+			<div class="span2 type" data-bind="text: '&#8377;' + cost()"></div>
+			<div class="span1 offset1" data-bind="css: mood">
+				<div class="badge badge-success" data-bind="text: happyFeedBacks().length"></div>
+				<div class="badge badge-important" data-bind="text: sadFeedBacks().length"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span6 hfeedbacks" data-bind="template: {name: 'feedback-template', foreach: happyFeedBacks}"></div>
+			<div class="span6 sfeedbacks" data-bind="template: {name: 'feedback-template', foreach: sadFeedBacks}"></div>
+		</div>		
+	</div>	
+</div>
+</script>
+</body>
+</html>

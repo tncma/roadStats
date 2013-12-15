@@ -1,0 +1,33 @@
+.road {
+	margin: 5px;
+	border: 1px solid hsl(0,10%, 99%);
+	min-height: 50px;
+}
+.road:nth-child(2n) {
+	background-color: hsla(200,70%, 97%, 0.5);
+}
+.road:nth-child(2n+1) {
+	background-color: hsla(200,70%, 90%, 0.5);
+}
+
+.sad {
+	background-color: hsla(10,100%, 50%, 0.5);
+	padding: 10px;
+}
+.happy {
+	background-color: hsla(93,80%, 35%, 0.5);
+	padding: 10px;
+}
+
+.sfeedbacks span{
+	background-color: hsla(10,100%, 50%, 0.5);	
+	padding: 1px 7px;
+	margin: 15px;
+	border-radius: 5px;
+}
+.hfeedbacks span{
+	background-color: hsla(93,80%, 35%, 0.5);
+	padding: 1px 7px;
+	margin: 15px;
+	border-radius: 5px;
+}

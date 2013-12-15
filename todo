@@ -1,0 +1,27 @@
+todo
+	roadSI Id, type,
+	road name, 
+	contractor - ,
+	cost spent,
+	when,
+	feedback	
+done
+	
+
+var roadStatisfaction = {
+	roads = [
+		{
+			RDSIId: 1000450300101,
+			name: 'S P KANNUSAMY STREET', 
+			type: 'ULB ROAD',
+			contractor: 'SP Contractor 1',
+			cost: 100000,
+			when:  '2000-JAN-10',
+			feedback: [{mood: 'sad', type: 'speedbrake-no-paint', text:'speedbrakes not painted'},
+					   {mood: 'sad', type: 'speedbrake-high-slope', text:'speedbrakes slope high, difficult'}]
+		}, 
+		{
+
+		}
+	]
+} 
