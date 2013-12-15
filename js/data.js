@@ -9,6 +9,37 @@ var roadStatisfaction = {
 			when:  '2000-JAN-10',
 			feedback: [{mood: 'sad', type: 'speedbreaker-no-paint', text:'speedbreakers not painted'},
 					   {mood: 'sad', type: 'speedbreaker-high-slope', text:'speedbreakers slope high, difficult'}]
+		},
+		{
+			id: 100045030401,
+			name: 'Loyads Road', 
+			type: 'ULB ROAD',
+			contractor: 'LR_Contractor_1',
+			cost: 10000,
+			when:  '2000-JAN-10',
+			feedback: [{mood: 'sad', type: 'speedbreaker-no-paint', text:'speedbreakers not painted'},
+					   {mood: 'sad', type: 'speedbreaker-high-slope', text:'speedbreakers slope high, difficult'}]
+		},
+		{
+			id: 100045030451,
+			name: 'Avvai Road', 
+			type: 'ULB ROAD',
+			contractor: 'AR_Contractor_1',
+			cost: 10000,
+			when:  '2000-JAN-10',
+			feedback: [{mood: 'sad', type: 'speedbreaker-no-paint', text:'speedbreakers not painted'},
+					   {mood: 'happy', type: 'rain-resistant', text:'with stood rain'}]
+		},
+		{
+			id: 100045030451,
+			name: 'Besant Road', 
+			type: 'ULB ROAD',
+			contractor: 'AR_Contractor_1',
+			cost: 10000,
+			when:  '2000-JAN-10',
+			feedback: [{mood: 'sad', type: 'speedbreaker-no-paint', text:'speedbreakers not painted'},
+					   {mood: 'happy', type: 'rain-resistant', text:'rain proof'},
+					   {mood: 'happy', type: 'speedbreaker-slope-optimum', text:'speedbreakers slope good'}]
 		}, 
 		{
 			id: 1000450300103,
@@ -18,7 +49,7 @@ var roadStatisfaction = {
 			cost: 200000,
 			when:  '2000-JAN-10',
 			feedback: [{mood: 'sad', type: 'speedbreaker-no-paint', text:'speedbreakers not painted'},
-					   {mood: 'sad', type: 'speedbreaker-no-paint', text:'speedbreakers not painted'},
+ 					   {mood: 'sad', type: 'speedbreaker-no-paint', text:'speedbreakers not painted'},
 					   {mood: 'sad', type: 'speedbreaker-high-slope', text:'speedbreakers slope high, difficult'}]
 		},
 		{
